@@ -17,8 +17,8 @@
  */
 (function () {
   const CONFIG = {
-    owner: 'YOUR-GITHUB-USERNAME',
-    repo: 'YOUR-REPO-NAME',
+    owner: 'ZafarPortfolio',
+    repo: 'zafarportfolio.github.io',
     branch: 'main',
     imagesPath: 'assets/images',
     videosPath: 'assets/videos',
