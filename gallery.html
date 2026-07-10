@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Zafar | Minecraft Plugin Developer</title>
+<meta name="description" content="Screenshots and gameplay footage of custom Minecraft plugins and server systems built by Zafar.">
+<link rel="icon" href="assets/icons/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-mark"><span>booting server.jar</span><div class="loader-bar"></div></div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">plugin<span class="dot">.</span>dev</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">Screenshots &amp; Footage</p>
+      <h1 style="font-size:clamp(2.2rem,5vw,3.2rem);">Gallery</h1>
+      <p style="max-width:560px;margin-top:1rem;">
+        Loaded straight from <code>assets/images/</code> and <code>assets/videos/</code>.
+        Drop files in those folders and they appear here automatically, no code changes needed.
+      </p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="gallery-tabs">
+        <button class="gallery-tab active" data-panel="panel-images">Images</button>
+        <button class="gallery-tab" data-panel="panel-videos">Videos</button>
+      </div>
+
+      <div id="panel-images" class="gallery-panel active">
+        <div id="image-grid" class="masonry">
+          <div class="gallery-empty">Loading images…</div>
+        </div>
+      </div>
+
+      <div id="panel-videos" class="gallery-panel">
+        <div id="video-grid" class="video-grid">
+          <div class="gallery-empty">Loading videos…</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Designed by Zafar — © <span data-year></span> All Rights Reserved</p>
+    <div class="footer-socials">
+      <a href="https://discord.com" target="_blank" rel="noopener">Discord</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+      <a href="mailto:makkahtor@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+<script src="js/gallery.js"></script>
+</body>
+</html>

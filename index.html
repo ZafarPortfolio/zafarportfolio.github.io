@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zafar — Minecraft Plugin Developer</title>
+<meta name="description" content="Zafar is a Minecraft plugin developer building high-performance custom server systems with Java, Paper, Spigot and Velocity, from SMP toolkits to matchmaking and party systems.">
+<meta name="keywords" content="Minecraft plugin developer, Java developer, Paper API, Spigot, Velocity, Minecraft server developer">
+<meta name="author" content="Zafar">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zafar — Minecraft Plugin Developer">
+<meta property="og:description" content="Building high-performance, custom Minecraft server systems.">
+<meta property="og:image" content="assets/images/og-cover.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/icons/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<div id="preloader">
+  <div class="loader-mark">
+    <span>booting server.jar</span>
+    <div class="loader-bar"></div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">plugin<span class="dot">.</span>dev</a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener">Résumé ↓</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow gold"></div>
+    <div class="hero-glow violet"></div>
+    <canvas id="particles-canvas"></canvas>
+
+    <div class="container hero-inner">
+      <div>
+        <p class="eyebrow">Available for new server projects</p>
+        <h1 class="hero-title">
+          Minecraft Plugin<br>
+          Developer building<br>
+          <span class="text-gradient">systems that don't lag.</span>
+        </h1>
+        <p class="hero-lede">
+          I design and ship high-performance, custom Minecraft server systems: queues,
+          ranked ladders, arenas and economies, built on Paper, Spigot and Velocity.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="contact.html" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <div class="hero-stats-mini">
+          <div><strong>50+</strong><span>Plugins Shipped</span></div>
+          <div><strong>4+</strong><span>Years Experience</span></div>
+          <div><strong>100+</strong><span>Features Built</span></div>
+        </div>
+      </div>
+
+      <div class="code-card float">
+        <div class="code-card-head">
+          <span class="tf-dot r"></span><span class="tf-dot y"></span><span class="tf-dot g"></span>
+          <span>plugin.yml</span>
+        </div>
+        <div class="code-card-body">
+<span class="k">name:</span> <span class="s">PracticeCore</span><br>
+<span class="k">main:</span> <span class="p">dev.muhammad.practicecore.Main</span><br>
+<span class="k">version:</span> <span class="s">3.4.1</span><br>
+<span class="k">api-version:</span> <span class="s">'1.21'</span><br>
+<span class="k">author:</span> <span class="s">Zafar</span><br>
+<span class="c"># dependencies</span><br>
+<span class="k">depend:</span> [<span class="s">Vault</span>, <span class="s">ProtocolLib</span>]<br>
+<span class="k">softdepend:</span> [<span class="s">PlaceholderAPI</span>]<br>
+<span class="c">status:</span> loading modules<span class="cursor-blink"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue"><span>Scroll</span><div class="line"></div></div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-card glass reveal">
+        <div class="about-avatar">Z</div>
+        <h3>Zafar</h3>
+        <span class="role-tag">Minecraft Plugin Developer</span>
+        <p>
+          I build the backend systems that make competitive Minecraft servers feel instant:
+          matchmaking that queues in milliseconds, arenas that reset clean, and stats that never desync.
+          Four years deep in Paper internals, packet manipulation and data persistence at scale.
+        </p>
+        <ul class="about-meta">
+          <li><span>Focus</span><span>PvP / Competitive Systems</span></li>
+          <li><span>Stack</span><span>Java · MySQL · Redis</span></li>
+          <li><span>Based</span><span>Remote</span></li>
+          <li><span>Status</span><span>Open to projects</span></li>
+        </ul>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <p class="eyebrow">Skill Set</p>
+        <h2>What I build with</h2>
+        <p style="max-width:460px;margin:.9rem 0 2rem;">
+          Mostly Java, day in and day out, wrapped around whatever the server platform needs.
+          Here's roughly how comfortable I am with each piece.
+        </p>
+        <div class="skills">
+          <div class="skill-row">
+            <div class="skill-row-top"><span>Java</span><span>95%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-level="95"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top"><span>Paper / Spigot</span><span>92%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-level="92"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top"><span>Purpur</span><span>85%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-level="85"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top"><span>Velocity / BungeeCord</span><span>80%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-level="80"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top"><span>SQL / Redis / MongoDB</span><span>88%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-level="88"></div></div>
+          </div>
+          <div class="skill-row">
+            <div class="skill-row-top"><span>Discord API</span><span>75%</span></div>
+            <div class="skill-bar"><div class="skill-bar-fill" data-level="75"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="section-alt">
+    <div class="container stats-grid">
+      <div class="stat-card glass reveal">
+        <div class="stat-num" data-count="50" data-suffix="+">0</div>
+        <div class="stat-label">Plugins</div>
+      </div>
+      <div class="stat-card glass reveal reveal-delay-1">
+        <div class="stat-num" data-count="180" data-suffix="k+">0</div>
+        <div class="stat-label">Lines of Code</div>
+      </div>
+      <div class="stat-card glass reveal reveal-delay-2">
+        <div class="stat-num" data-count="4" data-suffix="+">0</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-card glass reveal reveal-delay-3">
+        <div class="stat-num" data-count="100" data-suffix="+">0</div>
+        <div class="stat-label">Features Built</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECT ============ -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Featured Build</p>
+        <h2>SmpTools</h2>
+        <p>A big custom toolkit for SMP servers, packed with hand-built tools and player powers you won't find in any marketplace plugin.</p>
+      </div>
+
+      <div class="project-card glass reveal" style="max-width:560px;">
+        <div class="project-card-top">
+          <span class="project-status live">Live</span>
+          <span class="project-stars">★★★★★</span>
+        </div>
+        <h3>SmpTools</h3>
+        <p class="desc">A growing collection of custom tools, gadgets and player abilities built for survival and SMP servers.</p>
+        <ul class="project-features">
+          <li>Custom Tools & Gadgets</li>
+          <li>Player Super Powers</li>
+          <li>Ability Cooldown System</li>
+          <li>Custom Enchants</li>
+          <li>Balanced Progression</li>
+          <li>Fully Configurable</li>
+        </ul>
+        <a href="projects.html" class="btn btn-primary">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECH STACK ============ -->
+  <section class="section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Tech Stack</p>
+        <h2>Tools of the trade</h2>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-badge reveal"><span class="mark">JAVA</span><span class="name">Core Language</span></div>
+        <div class="tech-badge reveal reveal-delay-1"><span class="mark">PAPER</span><span class="name">Server API</span></div>
+        <div class="tech-badge reveal reveal-delay-2"><span class="mark">VELOCITY</span><span class="name">Proxy Network</span></div>
+        <div class="tech-badge reveal reveal-delay-3"><span class="mark">SPIGOT</span><span class="name">Server API</span></div>
+        <div class="tech-badge reveal"><span class="mark">MYSQL</span><span class="name">Persistent Data</span></div>
+        <div class="tech-badge reveal reveal-delay-1"><span class="mark">MONGODB</span><span class="name">Document Store</span></div>
+        <div class="tech-badge reveal reveal-delay-2"><span class="mark">DOCKER</span><span class="name">Deployment</span></div>
+        <div class="tech-badge reveal reveal-delay-3"><span class="mark">GITHUB</span><span class="name">Version Control</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIMELINE ============ -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+        <p class="eyebrow" style="justify-content:center;">Journey</p>
+        <h2>How it's gone so far</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-year">2023</span>
+          <h4>Started Plugin Development</h4>
+          <p>First lines of Java, first broken plugin.yml, first server that actually stayed online.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-1">
+          <span class="timeline-year">2024</span>
+          <h4>Created Practice Core</h4>
+          <p>Shipped the first version of a ranked PvP core, with queueing, arenas and Elo built from scratch.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <span class="timeline-year">2025</span>
+          <h4>Built Queue Systems</h4>
+          <p>Rebuilt matchmaking on Redis for cross-server queues with sub-second pairing.</p>
+        </div>
+        <div class="timeline-item reveal reveal-delay-3">
+          <span class="timeline-year">2026</span>
+          <h4>Professional Plugin Developer</h4>
+          <p>Now building and maintaining production systems for competitive Minecraft networks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT CTA ============ -->
+  <section class="section-alt">
+    <div class="container" style="text-align:center;">
+      <div class="reveal">
+        <p class="eyebrow" style="justify-content:center;">Let's build something</p>
+        <h2 style="margin-bottom:1.4rem;">Need a plugin for your server?</h2>
+        <p style="max-width:520px;margin:0 auto 2.2rem;">I'm currently taking on new projects, from a single custom minigame to a full network core.</p>
+        <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>Designed by Zafar — © <span data-year></span> All Rights Reserved</p>
+    <div class="footer-socials">
+      <a href="https://discord.com" target="_blank" rel="noopener">Discord</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+      <a href="mailto:makkahtor@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
